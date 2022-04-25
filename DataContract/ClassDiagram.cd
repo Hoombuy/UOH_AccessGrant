@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataContract.Common.BaseModelClass">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BaseModelClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Common.Codes.Code_MZ">
+    <Position X="1.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Codes\CodesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Common.Codes.Code_XB">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Codes\CodesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Common.Codes.Code_DQ">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Codes\CodesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Common.Codes.Code_HYZK">
+    <Position X="13.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Codes\CodesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Common.Codes.Code_BM">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAACAAIAEAEAAAAAAABBAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Codes\CodesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Common.Codes.Code_TJLB" Collapsed="true">
+    <Position X="22.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Codes\CodesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Common.Codes.Code_If" Collapsed="true">
+    <Position X="26.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Codes\CodesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Common.Codes.Code_ZZMM" Collapsed="true">
+    <Position X="29" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Codes\CodesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Common.Codes.Code_JKZK" Collapsed="true">
+    <Position X="24.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Codes\CodesClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Users.User">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAAAAAAAQAAAAAEAAAAAAQAAAACAAAAABEAFAEAAAA=</HashCode>
+      <FileName>Users\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataContract.Student.Student_BaseInfo">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NCgBAwGAGBIAEDJVAoURYCkggWgYKgFAhWAKQglxuEE=</HashCode>
+      <FileName>Student\Student_BaseInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

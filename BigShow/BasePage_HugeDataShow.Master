@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BasePage_HugeDataShow.Master.cs" Inherits="WebInterface.BasePage_HugeDataShow" %>
+
+<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>红河学院信息技术中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, User-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="/css/hugedatashow.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .nav-left {
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .nav-right {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            margin: 0;
+            font-size: 1.1em;
+            width: 40%;
+        }
+
+        .nav-left ul {
+            margin: 0;
+            padding: 0;
+        }
+
+            .nav-left ul li {
+                margin: 0px;
+                padding: 0;
+                list-style: none;
+                float: left;
+            }
+
+        .nav-right ul {
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+            .nav-right ul li {
+                margin: 0px;
+                padding: 0;
+                list-style: none;
+                float: left;
+            }
+
+
+        .nav-right a {
+            padding: 0 12px;
+            text-decoration: none;
+            color: rgb(204,255,255);
+            line-height: 100%;
+        }
+
+        .nav-left a {
+            padding: 0 12px;
+            text-decoration: none;
+            color: rgb(204,255,255);
+            line-height: 100%;
+        }
+
+            .nav-left a:link {
+                color: rgb(204,255,255);
+            }
+
+            .nav-left a:visited {
+                color: rgb(204,255,255);
+            }
+
+            .nav-left a:hover {
+                color: rgb(1,196,247);
+            }
+
+            .nav-left a:active {
+                color: rgb(179,175,80);
+            }
+
+        .nav-right a:hover {
+            color: rgb(1,196,247);
+        }
+    </style>
+</head>
+<body style="background-image: url('/images/bg_main.jpg'); position: relative; height: 100%;">
+    <form runat="server" id="form1">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" AsyncPostBackTimeout="450">
+        </asp:ScriptManager>
+        <dx:ASPxCallback ID="TheCallback" runat="server" ClientInstanceName="Callback">
+            <ClientSideEvents CallbackComplete="function(s, e) { LoadingPanel.Hide(); }" />
+        </dx:ASPxCallback>
+        <asp:Label ID="LabelInVisible" runat="server" Text="" Style="display: none;"></asp:Label>
+
+        <div style="height: 5%; width: 100%; position: fixed;">
+            <img src="/images/title.png" style="width: 100%;" />
+
+        </div>
+
+
+        <div style="z-index: 5; height: 90%; position: fixed; width: 100%; margin-top: 5%;" id="contentwrapper" class="content" runat="server">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+
+
+        <div style="position: absolute; bottom: 0px; width: 100%; background-image: url('/images/bg_bottom.png'); height: 100%; background-size: contain; background-repeat: no-repeat; background-position-y: bottom; z-index: 1;"></div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderModal" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+
+        <!--/container-->
+        <dx:ASPxLoadingPanel ID="TheLoadingPanel" runat="server" ClientInstanceName="LoadingPanel" Modal="True" Font-Bold="True" Font-Names="微软雅黑" Font-Size="9pt" Text="数据处理中&amp;hellip;">
+            <Image Url="~/images/Common/Loading.gif">
+            </Image>
+        </dx:ASPxLoadingPanel>
+
+    </form>
+</body>
+</html>
+
+
+
