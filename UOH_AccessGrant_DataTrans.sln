@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessControls", "Business\BusinessControls.csproj", "{D8A699F1-F15B-48D8-AB7D-32A486C17F76}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransTable", "DataTransTable\DataTransTable.csproj", "{0B0033C6-D369-406A-A7B5-D4AC3E257BA5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigShow", "BigShow\BigShow.csproj", "{4CDB0ADA-28B2-4B23-901D-5192806CF7C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigShow4K", "BigShow4K\BigShow4K.csproj", "{7CC98EFB-B5E6-448F-8BFB-50A1D80D8337}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4CDB0ADA-28B2-4B23-901D-5192806CF7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CDB0ADA-28B2-4B23-901D-5192806CF7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CDB0ADA-28B2-4B23-901D-5192806CF7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC98EFB-B5E6-448F-8BFB-50A1D80D8337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC98EFB-B5E6-448F-8BFB-50A1D80D8337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC98EFB-B5E6-448F-8BFB-50A1D80D8337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC98EFB-B5E6-448F-8BFB-50A1D80D8337}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
