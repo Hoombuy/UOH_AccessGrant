@@ -99,7 +99,8 @@
 
         </div>
    <%--     <div style="flex: 3 0 200px; display: flex; flex-direction: column;">
-   --%>         <div class="datapanel" style="flex: 2 0 200px;">
+   --%>       
+          <div class="datapanel" style="flex: 2 0 200px;">
                 <asp:LinkButton ID="LinkButton2" runat="server" OnClick="BigShow_Click" CommandName="DataAssets">
 
                     <uc1:DataPanelBorder runat="server" ID="DataPanelBorder2" Title="数据资产统计" />
@@ -119,26 +120,7 @@
 
                 </div>
             </div>
-<%--        </div>--%>
-    <%--    <div style="flex: 2 0 200px; display: flex; flex-direction: column;">
-            <div class="datapanel" style="flex: 1 0 100px;">
-
-                <uc1:DataPanelBorder runat="server" ID="DataPanelBordr6" Title="组织团员信息" />
-
-            </div>
-
-            <div class="datapanel" style="flex: 2 0 200px">
-                <asp:LinkButton ID="B_ER_MissionType" runat="server" OnClick="BigShow_Click" CommandName="ER_MissionType">
-
-                    <uc1:DataPanelBorder runat="server" ID="DataPanelBordr" Title="工作总体情况" />
-
-                </asp:LinkButton>
-
-            </div>
-
-        </div>--%>
-
-
+ 
 
     </div>
 </asp:Content>

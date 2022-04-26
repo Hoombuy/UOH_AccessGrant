@@ -34,7 +34,7 @@
                     position: 'right',
                     //offset: [10, 0],
                     textStyle: {
-                        fontSize: 26,
+                        fontSize: 12,
                         color: "#ffffff"
                     }
                 }
@@ -64,7 +64,7 @@
                     axisTick: { show: false },
                     axisLabel: {
                         margin: 30,
-                        fontSize: 26,
+                        fontSize: 12,
                         color: "#ffffff"
                     },
                     axisPointer: {

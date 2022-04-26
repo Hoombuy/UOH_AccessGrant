@@ -181,11 +181,18 @@
     <Content Include="css\style.ie8.css" />
     <Content Include="css\style.ie9.css" />
     <Content Include="DataPanelBorder.ascx" />
+    <Content Include="images\bangongfuwu.png" />
     <Content Include="images\bg_bottom.png" />
     <Content Include="images\bg_datarow.png" />
     <Content Include="images\bg_home_common.png" />
     <Content Include="images\bg_home_map.png" />
     <Content Include="images\bg_main.jpg" />
+    <Content Include="images\fuwu.png" />
+    <Content Include="images\fuwu_2.png" />
+    <Content Include="images\fuwu_3.png" />
+    <Content Include="images\fuwu_4.png" />
+    <Content Include="images\hong1.png" />
+    <Content Include="images\lv2.png" />
     <Content Include="images\menu_gzxn.png" />
     <Content Include="images\menu_hdjy.png" />
     <Content Include="images\menu_hlcx.png" />
@@ -322,6 +329,7 @@
     <Content Include="js\plugins\jquery.validate.min.js" />
     <Content Include="js\plugins\tinymce\jquery.tinymce.js" />
     <Content Include="js\plugins\ui.spinner.min.js" />
+    <Content Include="Page_ShowSeviceOnlineData.aspx" />
     <Content Include="Page_ShowDataAssets.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -507,6 +515,13 @@
     </Compile>
     <Compile Include="DataPanelBorder.ascx.designer.cs">
       <DependentUpon>DataPanelBorder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page_ShowSeviceOnlineData.aspx.cs">
+      <DependentUpon>Page_ShowSeviceOnlineData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page_ShowSeviceOnlineData.aspx.designer.cs">
+      <DependentUpon>Page_ShowSeviceOnlineData.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page_ShowDataAssets.aspx.cs">
       <DependentUpon>Page_ShowDataAssets.aspx</DependentUpon>

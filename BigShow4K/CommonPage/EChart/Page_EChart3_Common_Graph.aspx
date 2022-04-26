@@ -29,7 +29,7 @@
                     left: 'right',
                     top:'bottom',
                     textStyle: {
-                        fontSize: 26,
+                        fontSize: 11,
                         color: '#ffffff'
                     }
                 },
@@ -48,7 +48,7 @@
                     roam: true,
                     label: {
                         position: 'right',
-                        fontSize: 26,
+                        fontSize: 11,
                         textBorderType: 'solid',
                         color: '#ffffff'
                     },

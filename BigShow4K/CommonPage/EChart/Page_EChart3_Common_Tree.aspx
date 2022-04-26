@@ -39,7 +39,7 @@
                              //layout: 'radial',
                              symbol: 'emptyCircle',
                          
-                             symbolSize: 24,
+                             symbolSize: 12,
                              initialTreeDepth: 3,
                              animationDurationUpdate: 750,
 
@@ -48,7 +48,7 @@
                                  verticalAlign: 'middle',
                                  align: 'right',
                                  color: "#ffffff",
-                                 fontSize: 26
+                                 fontSize: 11
                              },
 
                              leaves: {
