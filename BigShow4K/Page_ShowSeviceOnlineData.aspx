@@ -275,9 +275,12 @@
                         <ItemTemplate>
                             <tr style="height: 30px;">
                                 <td style="min-width: 150px; max-width: 280px;">
-
-                                    <%# Eval("PROCESSNAME")%>    </td>
-                                <td style="min-width: 80px;"><%# Eval("CREATOR")%></td>
+                                     <span class=" label label-primary"  style="<%# GetColor((string)Eval("PROCESSNAME")) %>">
+                                          <%# Eval("PROCESSNAME")%>  
+                                     </span>
+                                </td>
+                                <td style="min-width: 80px;"> <%# Eval("CREATOR")%>
+                                </td>
                                 <td style="min-width: 80px;"><%# Eval("CREATETIME")%></td>
 
                             </tr>
@@ -300,7 +303,7 @@
                     <uc1:DataPanelBorder runat="server" ID="DataPanelBorder4" Title="服务事项分类图" />
                 </asp:LinkButton>
                 <div style="width: 100%; height: 100%;">
-                    <iframe src="/CommonPage/EChart/Page_EChart3_Common_SunDrink.aspx?SN=TypeSun&&Title=服务事项分类图"></iframe>
+                    <iframe src="CommonPage/EChart/Page_EChart3_Common_SunDrink.aspx?SN=TypeSun&&Title=服务事项分类图"></iframe>
 
                 </div>
 
@@ -314,7 +317,7 @@
                     <uc1:DataPanelBorder runat="server" ID="DataPanelBorder3" Title="服务事项时间分布图" />
                 </asp:LinkButton>
                 <div style="width: 100%; height: 90%;">
-                    <iframe src="/CommonPage/EChart/Page_EChart3_Common_Line.aspx?SN=TimeLine&&Title=服务事项时间分布图"></iframe>
+                    <iframe src="CommonPage/EChart/Page_EChart3_Common_Line.aspx?SN=TimeLine&&Title=服务事项时间分布图"></iframe>
 
                 </div>
             </div>

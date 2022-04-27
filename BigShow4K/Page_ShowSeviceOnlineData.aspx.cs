@@ -95,6 +95,8 @@ namespace BigShow4K
                 return GD_ZF.GetDataNumValue("  select count(*) from ZFBPMX.BPM_PRO_STATUS t   ");
             }
         }
+
+
         
 
 
@@ -114,6 +116,15 @@ namespace BigShow4K
 
             this.ClientScript.RegisterStartupScript(this.GetType(), "updateScriptmessage", @"<script>$('#BigShowModal').modal('show');</script>");
 
+        }
+
+        protected string GetColor(string proname)
+        {
+            if(proname == "学生外出申请审批V3")
+            {
+                return "background-color : #0562ad;";
+            }        
+            return "background-color:#009688;";
         }
 
         protected void DevDataLineShow_Click(object sender, EventArgs e)
