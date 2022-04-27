@@ -105,12 +105,12 @@ namespace BigShow4K
         {
             if (((LinkButton)sender).CommandName == "TypeSun")
             {
-                this.if_BigShow.Src = "/CommonPage/EChart/Page_EChart3_Common_SunDrink.aspx?SN=TypeSun&&Title=服务事项分类图";
+                this.if_BigShow.Src = "CommonPage/EChart/Page_EChart3_Common_SunDrink.aspx?SN=TypeSun&&Title=服务事项分类图";
             }
          
             if (((LinkButton)sender).CommandName == "TimeLine")
             {
-                this.if_BigShow.Src = "/CommonPage/EChart/Page_EChart3_Common_Line.aspx?SN=TimeLine&&Title=服务事项时间分布图";
+                this.if_BigShow.Src = "CommonPage/EChart/Page_EChart3_Common_Line.aspx?SN=TimeLine&&Title=服务事项时间分布图";
             }
 
 

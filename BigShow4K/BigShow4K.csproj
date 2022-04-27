@@ -71,6 +71,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\menu1.png" />
+    <Content Include="images\p1.png" />
     <Content Include="packages.config" />
     <Content Include="BasePage_HugeDataShow.Master" />
     <Content Include="CommonPage\EChart\hhz.json" />
@@ -115,6 +117,7 @@
     <Content Include="js\Echart3\map\json\world.json" />
     <Content Include="js\hhz.json" />
     <Content Include="js\USA.json" />
+    <None Include="Properties\PublishProfiles\bigshow4k.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
