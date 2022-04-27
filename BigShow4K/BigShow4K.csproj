@@ -329,6 +329,7 @@
     <Content Include="js\plugins\jquery.validate.min.js" />
     <Content Include="js\plugins\tinymce\jquery.tinymce.js" />
     <Content Include="js\plugins\ui.spinner.min.js" />
+    <Content Include="Page_ShowSeviceInfo.aspx" />
     <Content Include="Page_ShowSeviceOnlineData.aspx" />
     <Content Include="Page_ShowDataAssets.aspx" />
     <Content Include="Web.config" />
@@ -515,6 +516,13 @@
     </Compile>
     <Compile Include="DataPanelBorder.ascx.designer.cs">
       <DependentUpon>DataPanelBorder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page_ShowSeviceInfo.aspx.cs">
+      <DependentUpon>Page_ShowSeviceInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page_ShowSeviceInfo.aspx.designer.cs">
+      <DependentUpon>Page_ShowSeviceInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page_ShowSeviceOnlineData.aspx.cs">
       <DependentUpon>Page_ShowSeviceOnlineData.aspx</DependentUpon>

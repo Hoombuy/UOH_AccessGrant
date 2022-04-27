@@ -60,7 +60,7 @@
             background-color: transparent;
         }
 
- 
+
         .a_th, .b_th {
             padding-left: 50px;
             width: 50%;
@@ -116,7 +116,7 @@
 
 
         <div style="flex: 2 0 200px; display: flex; flex-direction: column;">
-            <div style="flex: 1 0 200px;" class="datapanel">
+            <div style="flex: 2 0 200px;" class="datapanel">
                 <asp:LinkButton ID="LinkButton2" runat="server" OnClick="BigShow_Click" CommandName="SystemTree">
                     <uc1:DataPanelBorder runat="server" ID="DataPanelBorder2" Title="在线服务事项运行总计" />
                 </asp:LinkButton>
@@ -153,7 +153,7 @@
                             </td>
                         </tr>
 
-                        <%--2--%>
+
                         <tr>
                             <td class=" a_th">
                                 <asp:LinkButton ID="B_DDMY_ZH_DYCYZJZ" runat="server" OnClick="DevDataLineShow_Click" CommandArgument="服务类别"> 
@@ -185,7 +185,6 @@
 
 
                         </tr>
-                        <%--3--%>
 
                         <tr>
                             <td class=" a_th">
@@ -215,7 +214,7 @@
                                 </asp:LinkButton>
                             </td>
                         </tr>
-                        <%--4--%>
+
                         <tr>
                             <td class=" b_th">
                                 <asp:LinkButton ID="B_DDMY_NY_NLZCZ" runat="server" OnClick="DevDataLineShow_Click" CommandArgument="本月服务人次">
@@ -244,41 +243,12 @@
                                 </asp:LinkButton>
                             </td>
                         </tr>
-                        <%--5--%>
-                        <tr>
-                            <td class=" b_th">
-                                <asp:LinkButton ID="B_DDMY_GYJZY_GYZCZ" runat="server" OnClick="DevDataLineShow_Click" CommandArgument="工业总产值（亿元）">
-                            <table>
-                                <tr>
-                                    <td rowspan="2"><img src="images/hong1.png"   class="infoimg"  /></td>
-                                    <td class="c_th"><%=888%><div style="color:#fff; float:right">（亿元）</div></td>
-                                </tr>
-                                <tr>
-                                    <td style="color:#fff;">工业总产值</td>
-                                </tr>
-                            </table>
-                                </asp:LinkButton>
-                            </td>
-                            <td class=" a_th">
-                                <asp:LinkButton ID="B_DDMY_GYJZY_BSNZZ" runat="server" OnClick="DevDataLineShow_Click" CommandArgument="工业增长率（%）">
-                            <table>
-                                <tr>
-                                    <td rowspan="2"><img src="images/lv2.png"  class="infoimg"   /></td>
-                                    <td class="c_th"><%=111 %><div style="color:#fff; float:right">（%）</div></td>
-                                </tr>
-                                <tr>                   
-                                    <td style="color:#fff;">工业增长率</td>
-                                </tr>
-                            </table>
-                                </asp:LinkButton>
-                            </td>
-                        </tr>
 
                     </table>
 
                 </div>
             </div>
-            <div style="flex: 1 0 200px;" class="datapanel">
+            <%-- <div style="flex: 1 0 200px;" class="datapanel">
                 <asp:LinkButton ID="LinkButton1" runat="server" OnClick="BigShow_Click" CommandName="SystemTree">
                     <uc1:DataPanelBorder runat="server" ID="DataPanelBorder1" Title="红河学院信息系统列表" />
                 </asp:LinkButton>
@@ -287,29 +257,66 @@
 
                     <iframe src="/CommonPage/EChart/Page_EChart3_Common_Pie.aspx?SN=ShowTypePie&&Title=服务事项类别占比"></iframe>
                 </div>
-            </div>
+            </div>--%>
+            <div style="flex: 3 0 300px; padding: 10px;" class="datapanel">
+                <asp:LinkButton ID="LinkButton5" runat="server" OnClick="BigShow_Click" CommandName="LastPList">
+                    <uc1:DataPanelBorder runat="server" ID="DataPanelBorder5" Title="最新事项列表" />
+                </asp:LinkButton>
+                <table style="color: #fff; font-size: 9pt; width: 100%;">
+                    <tr style="color: #5db2db;">
+                        <td>服务事项类别</td>
+                        <td>发起人</td>
+                        <td>发起时间</td>
 
+
+                    </tr>
+
+                    <asp:Repeater ID="GridView_Main" runat="server" OnItemDataBound="GridView_Main_ItemDataBound">
+                        <ItemTemplate>
+                            <tr style="height: 30px;">
+                                <td style="min-width: 150px; max-width: 280px;">
+
+                                    <%# Eval("PROCESSNAME")%>    </td>
+                                <td style="min-width: 80px;"><%# Eval("CREATOR")%></td>
+                                <td style="min-width: 80px;"><%# Eval("CREATETIME")%></td>
+
+                            </tr>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </table>
+            </div>
         </div>
-        <%--     <div style="flex: 3 0 200px; display: flex; flex-direction: column;">
-        --%>
-        <%--    <div class="datapanel" style="flex: 2 0 200px;">
-            <asp:LinkButton ID="LinkButton2" runat="server" OnClick="BigShow_Click" CommandName="DataAssets">
 
-                <uc1:DataPanelBorder runat="server" ID="DataPanelBorder2" Title="数据资产统计" />
-            </asp:LinkButton>
-            <div style="width: 100%; height: 90%;">
-                <iframe src="/CommonPage/EChart/Page_EChart3_Common_PctorialBar.aspx?SN=DataAssets&&Title=数据资产"></iframe>
+
+
+        <div class="datapanel" style="flex: 4 0 400px; display: flex; flex-direction: column;">
+
+
+
+            <div style="flex: 4 0 400px;">
+
+                <asp:LinkButton ID="LinkButton4" runat="server" OnClick="BigShow_Click" CommandName="TypeSun">
+
+                    <uc1:DataPanelBorder runat="server" ID="DataPanelBorder4" Title="服务事项分类图" />
+                </asp:LinkButton>
+                <div style="width: 100%; height: 100%;">
+                    <iframe src="/CommonPage/EChart/Page_EChart3_Common_SunDrink.aspx?SN=TypeSun&&Title=服务事项分类图"></iframe>
+
+                </div>
+
+
             </div>
-        </div>--%>
 
-        <div class="datapanel" style="flex: 2 0 200px;">
-            <asp:LinkButton ID="LinkButton3" runat="server" OnClick="BigShow_Click" CommandName="DataTranRule">
+            <%--右下角长框--%>
+            <div style="flex: 2 0 200px;">
+                <asp:LinkButton ID="LinkButton3" runat="server" OnClick="BigShow_Click" CommandName="TimeLine">
 
-                <uc1:DataPanelBorder runat="server" ID="DataPanelBorder3" Title="数据交换规则" />
-            </asp:LinkButton>
-            <div style="width: 100%; height: 90%;">
-                <iframe src="/CommonPage/EChart/Page_EChart3_Common_Graph.aspx?SN=DataTranRule&&Title=数据交换规则"></iframe>
+                    <uc1:DataPanelBorder runat="server" ID="DataPanelBorder3" Title="服务事项时间分布图" />
+                </asp:LinkButton>
+                <div style="width: 100%; height: 90%;">
+                    <iframe src="/CommonPage/EChart/Page_EChart3_Common_Line.aspx?SN=TimeLine&&Title=服务事项时间分布图"></iframe>
 
+                </div>
             </div>
         </div>
 
@@ -342,39 +349,3 @@
         </div>
     </div>
 </asp:Content>
-
-<%--           <div style="width: 100%; height: 80%; display: flex; flex-direction: row;">
-                    <div style="flex: 1 1 120px;">
-
-                        <div class="message">
-                                <span style="color: rgb(1,169,232); font-size: 0.8em;">团组织</span><br/>
-                                <span style="color: rgb(0,255,0); font-size: 1.3em;"><%=_X %></span>
-                                <span class="compare">比上月0.6%<img src="images/绿三角.png"/></span>
-                        </div>
-
-                        <iframe src="/CommonPage/EChart/Page_EChart3_Common_Pie.aspx?SN=O_HYLB&Title="></iframe>
-                            
-                    </div>
-                    <div style="flex: 1 1 120px;">
-
-                        <div class="message">
-                            <span style="color: rgb(1,169,232); font-size: 0.8em;">团员</span><br/>
-                            <span style="color: rgb(255,180,0); font-size: 1.3em;"><%=_Y %></span>
-                            <span class="compare">比上月0.6%<img src="images/红三角.png"/></span>
-                        </div>
-
-                        <iframe src="/CommonPage/EChart/Page_EChart3_Common_Pie.aspx?SN=ER_Carrier"></iframe>
-
-                    </div>
-                    <div style="flex: 1 1 120px;">
-
-                        <div class="message">
-                            <span style="color: rgb(1,169,232); font-size: 0.8em;">团组织---</span><br/>
-                            <span style="color: rgb(248,114,30); font-size: 1.3em;"><%=_Z %></span>
-                            <span class="compare">比上月0.6%<img src="images/绿三角.png"/></span>
-                        </div>
-
-                        <iframe src="/CommonPage/EChart/Page_EChart3_Common_Pie.aspx?SN=O_WHCD&Rose=true"></iframe>
-
-                    </div>
-                </div>--%>

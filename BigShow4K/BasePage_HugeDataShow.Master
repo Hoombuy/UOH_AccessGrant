@@ -108,13 +108,14 @@
         </dx:ASPxCallback>
         <asp:Label ID="LabelInVisible" runat="server" Text="" Style="display: none;"></asp:Label>
 
-        <div style="height: 5%; width: 100%; position: fixed;">
-            <img src="/images/title.png" style="width: 100%;" />
-
+        <div style="width: 100%;">
+            <img src="/images/title.png" style="width: 100%; position:relative;" />
+            <a href="Page_ShowSeviceInfo.aspx" style="position:relative; left:5%; top:-50px;">服务说明</a>
+            <a href="Page_ShowSeviceOnlineData.aspx"  style="position:relative; left:8%; top:-50px;">数据监控</a>
         </div>
 
 
-        <div style="z-index: 5; height: 90%; position: fixed; width: 100%; margin-top: 5%;" id="contentwrapper" class="content" runat="server">
+        <div style="z-index: 5; height: 95%; position: fixed; width: 100%;" id="contentwrapper" class="content" runat="server">
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
             </asp:ContentPlaceHolder>
@@ -123,7 +124,7 @@
 
 
 
-        <div style="position: absolute; bottom: 0px; width: 100%; background-image: url('/images/bg_bottom.png'); height: 100%; background-size: contain; background-repeat: no-repeat; background-position-y: bottom; z-index: 1;"></div>
+ <%--       <div style="position: absolute; bottom: 0px; width: 100%; background-image: url('/images/bg_bottom.png'); height: 100%; background-size: contain; background-repeat: no-repeat; background-position-y: bottom; z-index: 1;"></div>--%>
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolderModal" runat="server">
         </asp:ContentPlaceHolder>

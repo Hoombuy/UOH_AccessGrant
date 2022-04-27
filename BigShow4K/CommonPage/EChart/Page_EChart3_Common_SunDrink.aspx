@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <div id="main" style="width: 100%; height: 100%; text-align: center;" runat="server">
+    <div id="main" style="width: 90%; height: 90%; text-align: center;" runat="server">
     </div>
 
     <script type="text/javascript">
@@ -30,7 +30,7 @@
                 text: 'WORLD COFFEE RESEARCH SENSORY LEXICON',
                 subtext: 'Source: https://worldcoffeeresearch.org/work/sensory-lexicon/',
                 textStyle: {
-                    fontSize: 14,
+                    fontSize: 9,
                     align: 'center'
                 },
                 subtextStyle: {

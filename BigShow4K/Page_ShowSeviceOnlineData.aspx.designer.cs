@@ -103,40 +103,49 @@ namespace BigShow4K {
         protected global::System.Web.UI.WebControls.LinkButton B_DDMY_NY_BSNZZ;
         
         /// <summary>
-        /// B_DDMY_GYJZY_GYZCZ 控件。
+        /// LinkButton5 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton B_DDMY_GYJZY_GYZCZ;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
         
         /// <summary>
-        /// B_DDMY_GYJZY_BSNZZ 控件。
+        /// DataPanelBorder5 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton B_DDMY_GYJZY_BSNZZ;
+        protected global::BigShow4K.DataPanelBorder DataPanelBorder5;
         
         /// <summary>
-        /// LinkButton1 控件。
+        /// GridView_Main 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.Repeater GridView_Main;
         
         /// <summary>
-        /// DataPanelBorder1 控件。
+        /// LinkButton4 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::BigShow4K.DataPanelBorder DataPanelBorder1;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        
+        /// <summary>
+        /// DataPanelBorder4 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::BigShow4K.DataPanelBorder DataPanelBorder4;
         
         /// <summary>
         /// LinkButton3 控件。
