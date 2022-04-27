@@ -115,22 +115,20 @@
     <div style="display: flex; flex-direction: row; padding: 0px; height: 100%;">
 
 
-        <div style="flex: 1 0 200px; display: flex; flex-direction: column;">
-          
-
-            </div>
- 
-       
-
-        <div class="datapanel" style="flex: 4 0 400px; display: flex; flex-direction: column;">
+        <div style="flex: 2 200px; display: flex; flex-direction: column;">
+            <asp:LinkButton runat="server"><img style=" width:100%;" src="images/menu1.png" /></asp:LinkButton>
+        </div>
 
 
 
-         
+        <div class="datapanel" style="flex: 11 0 1100px; display: flex; flex-direction: column;">
+            <img style="height: 80%; width: 80%; margin:5%;" src="images/p1.png" />
+
+
+
         </div>
 
 
     </div>
 </asp:Content>
 
- 
