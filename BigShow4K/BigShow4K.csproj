@@ -73,6 +73,7 @@
   <ItemGroup>
     <Content Include="images\menu1.png" />
     <Content Include="images\p1.png" />
+    <Content Include="images\title.png" />
     <Content Include="packages.config" />
     <Content Include="BasePage_HugeDataShow.Master" />
     <Content Include="CommonPage\EChart\hhz.json" />
@@ -205,7 +206,6 @@
     <Content Include="images\menu_ztgz.png" />
     <Content Include="images\menu_zzhx.png" />
     <Content Include="images\panle_map.png" />
-    <Content Include="images\title.png" />
     <Content Include="images\分隔线.png" />
     <Content Include="images\半透明框1.png" />
     <Content Include="images\小框.png" />
