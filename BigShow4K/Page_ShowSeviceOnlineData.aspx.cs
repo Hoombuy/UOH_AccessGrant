@@ -96,8 +96,37 @@ namespace BigShow4K
             }
         }
 
+        public string JRFWSX
+        {
+            get
+            {
+                return GD_ZF.GetDataNumValue("  select count(*) from ZFBPMX.BPM_PRO_RUN_HIS t where to_char(createtime,'YYYY:MM:DD') = to_char(sysdate,'YYYY:MM:DD') ");
+            }
+        }
 
+        public string BZFWSX
+        {
+            get
+            {
+                return GD_ZF.GetDataNumValue(" select count(*) from ZFBPMX.BPM_PRO_RUN_HIS t where to_char(createtime, 'YYYY:IW') = to_char(sysdate - 1, 'YYYY:IW')");
+            }
+        }
         
+        public string BYFWSX
+        {
+            get
+            {
+                return GD_ZF.GetDataNumValue(" select count(*) from  ZFBPMX.BPM_PRO_RUN_HIS t where to_char(createtime, 'YYYY:MM') = to_char(sysdate , 'YYYY:MM')");
+            }
+        }
+
+        public string BNFWSX
+        {
+            get
+            {
+                return GD_ZF.GetDataNumValue(" select count(*) from  ZFBPMX.BPM_PRO_RUN_HIS t where to_char(createtime, 'YYYY') = to_char(sysdate , 'YYYY') ");
+            }
+        }
 
 
 
@@ -124,7 +153,7 @@ namespace BigShow4K
             {
                 return "background-color : #0562ad;";
             }        
-            return "background-color:#009688;";
+            return "background-color:#ff9800;";
         }
 
         protected void DevDataLineShow_Click(object sender, EventArgs e)

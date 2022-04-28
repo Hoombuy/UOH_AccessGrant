@@ -64,12 +64,18 @@
         .a_th, .b_th {
             padding-left: 50px;
             width: 50%;
-            height: 70px;
+            height: 175px;
         }
 
         .c_th {
-            font-size: 21px;
+            font-size: 54px;
             color: aqua;
+            padding:0 0 0 15px;
+        }
+        .d_th{
+            color:#fff;
+            font-size:33px;
+            padding:0 0 0 15px;
         }
 
         a:hover {
@@ -77,8 +83,8 @@
         }
 
         .infoimg {
-            width: 39px;
-            height: 36px;
+            width: 89px;
+            height: 86px;
         }
 
         .q_th {
@@ -132,7 +138,7 @@
                                     <td class="c_th"><%=FWSXZS%> <div style="color:#fff; float:right">（人次）</div></td>
                                 </tr>
                                 <tr>
-                                    <td style="color:#fff;">服务事项总数</td>
+                                    <td class="d_th">服务事项总数</td>
                                 </tr>
                             </table>
                                 </asp:LinkButton>
@@ -146,7 +152,7 @@
                                     <td class="c_th"><%=BJSXZS%><div style="color:#fff; float:right">（人次）</div></td>
                                 </tr>
                                 <tr>
-                                         <td style="color:#fff;">办结事项总数</td>
+                                         <td class="d_th">办结事项总数</td>
                                 </tr>
                             </table>
                                 </asp:LinkButton>
@@ -163,7 +169,7 @@
                                     <td class="c_th"><%=FWLBS%><div style="color:#fff; float:right">（项）</div></td>
                                 </tr>
                                 <tr>           
-                                       <td style="color:#fff;">服务类别</td>
+                                       <td class="d_th">服务类别</td>
                                 </tr>
                             </table>
                                 </asp:LinkButton>
@@ -177,7 +183,7 @@
                                     <td class="c_th"><%=BLHJCZS %><div style="color:#fff; float:right">（次）</div></td>
                                 </tr>
                                 <tr>          
-                                         <td style="color:#fff;">办理环节操作数</td>
+                                         <td class="d_th"">办理环节操作数</td>
                                 </tr>
                             </table>
                                 </asp:LinkButton>
@@ -192,10 +198,10 @@
                             <table>
                                 <tr>
                                     <td rowspan="2"><img src="images/hong1.png"   class="infoimg"  /></td>
-                                    <td class="c_th"><%=4444 %><div style="color:#fff; float:right">（人次）</div></td>
+                                    <td class="c_th"><%=JRFWSX%><div style="color:#fff; float:right">（人次）</div></td>
                                 </tr>
                                 <tr>
-                                    <td style="color:#fff;">今日服务事项</td>
+                                    <td class="d_th">今日服务事项</td>
                                 </tr>
                             </table>
                                 </asp:LinkButton>
@@ -205,10 +211,10 @@
                             <table>
                                 <tr>
                                     <td rowspan="2"><img src="images/lv2.png"  class="infoimg"    /></td>
-                                    <td class="c_th"><%=5555 %><div style="color:#fff; float:right">（人次）</div></td>
+                                    <td class="c_th"><%=BZFWSX %><div style="color:#fff; float:right">（人次）</div></td>
                                 </tr>
                                 <tr>
-                                    <td style="color:#fff;">本周服务事项</td>
+                                    <td class="d_th">本周服务事项</td>
                                 </tr>
                             </table>
                                 </asp:LinkButton>
@@ -221,10 +227,10 @@
                             <table>
                                 <tr>
                                     <td rowspan="2"><img src="images/hong1.png"  class="infoimg"   /></td>
-                                    <td class="c_th"><%=666%><div style="color:#fff; float:right">（人次）</div></td>
+                                    <td class="c_th"><%=BYFWSX%><div style="color:#fff; float:right">（人次）</div></td>
                                 </tr>
                                 <tr>          
-                                    <td style="color:#fff;">本月服务事项</td>
+                                    <td class="d_th">本月服务事项</td>
                                 </tr>
                             </table>
                                 </asp:LinkButton>
@@ -234,10 +240,10 @@
                             <table>
                                 <tr>
                                     <td rowspan="2"><img src="images/lv2.png"   class="infoimg"  /></td>
-                                    <td class="c_th"><%=77%><div style="color:#fff; float:right">（人次）</div></td>
+                                    <td class="c_th"><%=BNFWSX%><div style="color:#fff; float:right">（人次）</div></td>
                                 </tr>
                                 <tr>
-                                    <td style="color:#fff;">本年服务事项</td>
+                                    <td class="d_th">本年服务事项</td>
                                 </tr>
                             </table>
                                 </asp:LinkButton>
@@ -263,25 +269,25 @@
                     <uc1:DataPanelBorder runat="server" ID="DataPanelBorder5" Title="最新事项列表" />
                 </asp:LinkButton>
                 <table style="color: #fff; font-size: 9pt; width: 100%;">
-                    <tr style="color: #5db2db;">
-                        <td>服务事项类别</td>
+                    <tr style="color: #5db2db;font-size: 26pt;">
+                        <td style="padding:0 100px 0 40px">服务事项类别</td>
                         <td>发起人</td>
-                        <td>发起时间</td>
+                        <td style="float: right; margin-right: 130px;">发起时间</td>
 
 
                     </tr>
 
                     <asp:Repeater ID="GridView_Main" runat="server" OnItemDataBound="GridView_Main_ItemDataBound">
                         <ItemTemplate>
-                            <tr style="height: 30px;">
-                                <td style="min-width: 150px; max-width: 280px;">
+                            <tr style="height: 70px;font-size: 26pt;">
+                                <td style="min-width: 150px; max-width: 280px;padding:0 0 0 35px">
                                      <span class=" label label-primary"  style="<%# GetColor((string)Eval("PROCESSNAME")) %>">
                                           <%# Eval("PROCESSNAME")%>  
                                      </span>
                                 </td>
                                 <td style="min-width: 80px;"> <%# Eval("CREATOR")%>
                                 </td>
-                                <td style="min-width: 80px;"><%# Eval("CREATETIME")%></td>
+                                <td style="min-width: 80px;float: right;margin-right: 55px;"><%# Eval("CREATETIME")%></td>
 
                             </tr>
                         </ItemTemplate>
@@ -342,7 +348,7 @@
 
                     <div class="modal-footer">
 
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        <button type="button" class="btn btn-danger "  style="width: 200px; height: 100px;font-size: 25pt;" data-dismiss="modal">
                             关闭   
                         </button>
                     </div>
