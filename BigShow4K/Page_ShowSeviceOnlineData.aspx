@@ -70,12 +70,13 @@
         .c_th {
             font-size: 54px;
             color: aqua;
-            padding:0 0 0 15px;
+            padding: 0 0 0 15px;
         }
-        .d_th{
-            color:#fff;
-            font-size:33px;
-            padding:0 0 0 15px;
+
+        .d_th {
+            color: #fff;
+            font-size: 33px;
+            padding: 0 0 0 15px;
         }
 
         a:hover {
@@ -268,7 +269,7 @@
                 <asp:LinkButton ID="LinkButton5" runat="server" OnClick="BigShow_Click" CommandName="LastPList">
                     <uc1:DataPanelBorder runat="server" ID="DataPanelBorder5" Title="最新事项列表" />
                 </asp:LinkButton>
-                <table style="color: #fff; font-size: 9pt; width: 100%;">
+                <%--         <table style="color: #fff; font-size: 9pt; width: 100%;">
                     <tr style="color: #5db2db;font-size: 26pt;">
                         <td style="padding:0 100px 0 40px">服务事项类别</td>
                         <td>发起人</td>
@@ -277,7 +278,7 @@
 
                     </tr>
 
-                    <asp:Repeater ID="GridView_Main" runat="server" OnItemDataBound="GridView_Main_ItemDataBound">
+          <asp:Repeater ID="GridView_Main" runat="server" OnItemDataBound="GridView_Main_ItemDataBound">
                         <ItemTemplate>
                             <tr style="height: 70px;font-size: 26pt;">
                                 <td style="min-width: 150px; max-width: 280px;padding:0 0 0 35px">
@@ -291,8 +292,12 @@
 
                             </tr>
                         </ItemTemplate>
-                    </asp:Repeater>
-                </table>
+                    </asp:Repeater> 
+                             
+                </table>--%>
+
+                <iframe src="UCT_LastPList.aspx"  style="border:none; overflow:hidden; "></iframe>
+
             </div>
         </div>
 
@@ -348,7 +353,7 @@
 
                     <div class="modal-footer">
 
-                        <button type="button" class="btn btn-danger "  style="width: 200px; height: 100px;font-size: 25pt;" data-dismiss="modal">
+                        <button type="button" class="btn btn-danger " style="width: 200px; height: 100px; font-size: 25pt;" data-dismiss="modal">
                             关闭   
                         </button>
                     </div>

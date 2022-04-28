@@ -57,9 +57,9 @@ namespace BigShow4K
         private void ShowLastPList()
         {
 
-            DataTable Table_ZFJXRW = GD_ZF.GetDataTable("  select * from  (select processname, createtime,  rpad(substr(creator,1,1), length(creator)+1,'*') as creator  from ZFBPMX.BPM_PRO_RUN_HIS t order by createtime desc) where rownum <= 15");
-            this.GridView_Main.DataSource = Table_ZFJXRW;
-            this.GridView_Main.DataBind();
+            //DataTable Table_ZFJXRW = GD_ZF.GetDataTable("  select * from  (select processname, createtime,  rpad(substr(creator,1,1), length(creator)+1,'*') as creator  from ZFBPMX.BPM_PRO_RUN_HIS t order by createtime desc) where rownum <= 15");
+            //this.GridView_Main.DataSource = Table_ZFJXRW;
+            //this.GridView_Main.DataBind();
         
         }
 

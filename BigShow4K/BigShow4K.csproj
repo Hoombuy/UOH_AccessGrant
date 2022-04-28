@@ -335,6 +335,7 @@
     <Content Include="Page_ShowSeviceInfo.aspx" />
     <Content Include="Page_ShowSeviceOnlineData.aspx" />
     <Content Include="Page_ShowDataAssets.aspx" />
+    <Content Include="UCT_LastPList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -542,6 +543,13 @@
       <DependentUpon>Page_ShowDataAssets.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCT_LastPList.aspx.cs">
+      <DependentUpon>UCT_LastPList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCT_LastPList.aspx.designer.cs">
+      <DependentUpon>UCT_LastPList.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\BusinessControls.csproj">
