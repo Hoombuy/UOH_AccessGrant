@@ -8,23 +8,25 @@
     <script src="../../js/Echart3/echarts.min.js"></script>
     <script src="../../ProgramCourse/js/Echart3/theme/roma.js"></script>
     <script src="../../ProgramCourse/js/Echart3/theme/vintage.js"></script>
+    <script src="../../ProgramCourse/js/Echart3/theme/cly.js"></script>
     <style type="text/css">
         html, body {
-            height: 95%;
+            height: 98%;
         }
     </style>
 </head>
 <body>
 
-    <div id="main" style="width: 90%; height: 90%; text-align: center;" runat="server">
+    <div id="main" style="width: 100%; height: 100%; text-align: center;" runat="server">
     </div>
 
     <script type="text/javascript">
-        var myChart = echarts.init(document.getElementById('main'));
+        var myChart = echarts.init(document.getElementById('main'), 'cly');
         var option = {
             tooltip: {
                 trigger: 'item',
-                triggerOn: 'mousemove'
+                triggerOn: 'mousemove',
+              
             },
             title: {
                 text: 'WORLD COFFEE RESEARCH SENSORY LEXICON',
@@ -43,7 +45,8 @@
                 highlightPolicy: 'ancestor',
                 data: [<%=DataText %>],
                 radius: [0, '95%'],
-                sort: null,
+                sort: undefined,
+                center: ["50%", "50%"],
                 levels: [{}, {
                     r0: '15%',
                     r: '35%',
@@ -51,21 +54,37 @@
                         borderWidth: 2
                     },
                     label: {
-                        rotate: 'tangential'
+                        color: "rgba(247, 247, 247, 1)",
+                        fontSize:50,
+                        rotate: 'tangential',
+                        
+
                     }
                 }, {
                     r0: '35%',
-                    r: '70%',
+                    r: '68%',
                     label: {
+                        color: "rgba(247, 247, 247, 1)",
+                        fontSize:20,
                         align: 'right'
                     }
                 }, {
-                    r0: '70%',
-                    r: '72%',
+                    r0: '68%',
+                    r: '70%',
+
                     label: {
+                        
                         position: 'outside',
-                        padding: 3,
-                        silent: false
+                        padding: 2,
+                        silent: false,
+                        color: "rgba(247, 247, 247, 1)",
+                        fontSize: 15,
+                        width: 150,
+                        height: 300,
+                        overflow: "break"
+                        
+                        
+                        
                     },
                     itemStyle: {
                         borderWidth: 3

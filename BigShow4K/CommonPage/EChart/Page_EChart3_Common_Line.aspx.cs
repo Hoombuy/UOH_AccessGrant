@@ -116,16 +116,18 @@ namespace CommonPage.EChart
                                 {
                                     _D += _TheData.TheDatasList[i][j].VALUE + ",";
                                 }
-                                if (this.stack == "true")
-                                {
-                                    RT += string.Format("{{name: '{1}',type: 'line', stack: '{2}',areaStyle: {{ }},symbol: \"none\",smooth: true,itemStyle: {{normal: {{areaStyle: {{type: 'default' }}}} }} ,data: [{0}]}},", _D.Remove(_D.Length - 1), _TheData.TheNodes[i].NAME, this.stack);
+                                RT += string.Format("{{name: '{1}',type: 'line', stack: '{2}',areaStyle: {{ }},symbol: \"none\",smooth: true,itemStyle: {{normal: {{areaStyle: {{type: 'default' }}}} }} ,data: [{0}]}},", _D.Remove(_D.Length - 1), _TheData.TheNodes[i].NAME, this.stack);
 
-                                }
-                                else
-                                {
-                                    RT += string.Format("{{name: '{1}',type: 'line', smooth: false, symbol: \"none\",  data: [{0}]}},", _D.Remove(_D.Length - 1), _TheData.TheNodes[i].NAME);
+                                //if (this.stack == "true")
+                                //{
+                                //    RT += string.Format("{{name: '{1}',type: 'line', stack: '{2}',areaStyle: {{ }},symbol: \"none\",smooth: true,itemStyle: {{normal: {{areaStyle: {{type: 'default' }}}} }} ,data: [{0}]}},", _D.Remove(_D.Length - 1), _TheData.TheNodes[i].NAME, this.stack);
 
-                                }
+                                //}
+                                //else
+                                //{
+                                //    RT += string.Format("{{name: '{1}',type: 'line', smooth: true, symbol: \"none\",  data: [{0}]}},", _D.Remove(_D.Length - 1), _TheData.TheNodes[i].NAME);
+
+                                //}
 
                             }
                         }
