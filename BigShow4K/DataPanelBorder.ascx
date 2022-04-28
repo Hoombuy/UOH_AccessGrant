@@ -12,6 +12,6 @@
     <img src="images/小框.png" />
 </div>
 <div>
-    <h4 style="color: rgb(196,247,255); margin: 0px; margin-left: 15px; font-size:13pt;"><%=_title %></h4>
+    <h4 style="color: rgb(196,247,255); margin: 0px; margin-left: 15px; font-size:30pt;"><%=_title %></h4>
     <img src="images/分隔线.png" style="height: 100%; width: 100%;" />
 </div>
